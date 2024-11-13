@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gender Bias Detector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gender Bias Detector</h1>
+    
+    <div class="input-section">
+      <textarea 
+        id="textInput" 
+        placeholder="Paste your text here to analyze for gender bias..."
+      ></textarea>
+      
+      <button id="analyzeBtn" class="analyze-btn">
+        <span class="btn-text">Analyze</span>
+        <div class="spinner hidden"></div>
+      </button>
+    </div>
+
+    <div id="resultSection" class="result-section hidden">
+      <div class="result-card">
+        <h2>Analysis Result</h2>
+        <div id="biasScore" class="score"></div>
+        <div id="biasMessage" class="message"></div>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
